@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>your Restaurant</title>
+    <!--Bootstrap Style-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <!--Bootstrap Scripts-->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--Fontawesome Script-->
+    <script
+      src="https://kit.fontawesome.com/db67505c59.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--CSS Style-->
+    <link rel="stylesheet" href="styele.css" />
+
+    <!--AOS style for animate on scroll-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!--JS Script-->
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="container text-center d-lg-block d-none">
+        <div class="row">
+          <div class="col">
+            <i class="fa-solid fa-phone"></i>
+            <p class="d-inline-block texts">+989333333</p>
+          </div>
+          <div class="col">
+            <i class="fa-solid fa-envelope"></i>
+            <p class="d-inline-block texts">yourmail@email.com</p>
+          </div>
+          <div class="col">
+            <i class="fa-solid fa-door-open"></i>
+            <p class="d-inline-block texts">Monday - Sunday 8:00AM - 9:00PM</p>
+          </div>
+        </div>
+      </div>
+
+      <!--Navbar-->
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary sticky-top opacity-75"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#">Menu</a>
+              <a class="nav-link" href="#">Stories</a>
+              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#">Book a table</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!--Home-->
+      <section class="homeSection">
+        <!--First Section Carousel-->
+        <div
+          id="carouselExampleFade"
+          class="carousel slide carousel-fade bg-black"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="images/199286690294198.jpg"
+                class="d-block w-100 FirstCarouselImg opacity-50"
+                alt="ghorme-sabzi"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="images/chelo-kabab-koobideh-min.jpg"
+                class="d-block w-100 FirstCarouselImg opacity-50"
+                alt="chelo-kabab"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="images/zereshk-polo-ba-morgh.jpg"
+                class="d-block w-100 FirstCarouselImg opacity-50"
+                alt="zereshk-polo-ba-morgh"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev navbarButton"
+            type="button"
+            data-bs-target="#carouselExampleFade"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next navbarButton"
+            type="button"
+            data-bs-target="#carouselExampleFade"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <!--First Section Grid-->
+        <div class="container-fluid text-center firstGrid">
+          <div class="row row-cols-lg-1 row-cols-md-2 row-cols-4">
+            <div class="col col-lg-3 col-md-6 col-12" data-aos="fade-up">
+              <img src="images/circle1.png" class="firstGridImage" alt="" />
+              <h3>FoodName</h3>
+              <p>Ingrediant</p>
+            </div>
+            <div class="col col-lg-3 col-md-6 col-12" data-aos="fade-up">
+              <img src="images/circle2.png" class="firstGridImage" alt="" />
+              <h3>FoodName</h3>
+              <p>Ingrediant</p>
+            </div>
+            <div class="col col-lg-3 col-md-6 col-12" data-aos="fade-up">
+              <img src="images/circle3.png" class="firstGridImage" alt="" />
+              <h3>FoodName</h3>
+              <p>Ingrediant</p>
+            </div>
+            <div class="col col-lg-3 col-md-6 col-12" data-aos="fade-up">
+              <img src="images/circle4.png" class="firstGridImage" alt="" />
+              <h3>FoodName</h3>
+              <p>Ingrediant</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <!--About-->
+      <section>
+        <div class="container text-start mt-4">
+          <div class="row row-cols-lg-3 row-cols-md-2 row-cols-2">
+            <div class="col">
+              <img src="images/cropet chef1.png" class="w-100" alt="" />
+            </div>
+            <div class="col">
+              <img src="images/cropet chef 2.png" class="w-100" alt="" />
+            </div>
+            <div class="col col-md-12 col-12">
+              <div class="row">
+                <div class="col">
+                  <div class="container sectionsHeading mt-3" data-aos="fade-up">
+                    <span class="calligraphyText text-center">𝓐𝓫𝓸𝓾𝓽</span>
+                    <h2 class="sectionsText">Restaurant Name</h2>
+                  </div>
+                </div>
+                <div class="row"  data-aos="fade-up">
+                  <p class="texts">
+                    A small river named Duden flows by their place and supplies
+                    it with the necessary regelialia. It is a paradisematic
+                    country, in which roasted parts of sentences fly into your
+                    mouth.
+                  </p>
+                </div>
+                <div class="row" data-aos="fade-up">
+                  <p class="texts">Mon - Fri <strong>8 AM - 11 PM</strong></p>
+                </div>
+                <div class="row" data-aos="fade-up">
+                  <a href="#" class="boldTexts">+ 1-978-123-4567</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid text-center mt-4">
+          <div class="row row-cols-lg-5 row-cols-md-2 row-cols-1" data-aos="fade-up">
+            <div class="col">
+              <h3 class="boldTexts counter" data-target="18">18</h3>
+              <p class="texts">YEARS OF EXPERIENCED</p>
+            </div>
+            <div class="col">
+              <h3 class="boldTexts counter" data-target="100">100</h3>
+              <p class="texts">MENUS/DISH</p>
+            </div>
+            <div class="col">
+              <h3 class="boldTexts counter" data-target="50">50</h3>
+              <p class="texts">STAFFS</p>
+            </div>
+            <div class="col">
+              <h3 class="boldTexts counter" data-target="15000">15,000</h3>
+              <p class="texts">HAPPY CUSTOMERS</p>
+            </div>
+            <div class="col col-md-12">
+              <div class="row row-cols-sm-1 row-cols-1">
+                <p class="texts">
+                  A small river named Duden flows by their place and supplies it
+                  with the necessary regelialia.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <!--Services-->
+      <section class="bg-body-tertiary fullHeight">
+        <div class="container sectionsHeading" data-aos="fade-up">
+          <span class="calligraphyText">𝓢𝓮𝓻𝓿𝓲𝓬𝓮𝓼</span>
+          <h2 class="sectionsText">Catering Services</h2>
+        </div>
+        <div class="container text-center mt-5">
+          <div class="row row-cols-lg-3 row-cols-md-3 row-cols-1 g-5">
+            <div class="col mt-5" data-aos="fade-up">
+              <i class="fa-solid fa-cake-candles fa-2xl serviceIcons mt-5"></i>
+              <h3 class="mt-5">Birthday Party</h3>
+              <p class="texts mt-5">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab rem
+                praesentium inventore esse. Obcaecati, distinctio earum autem
+                consequatur sequi quisquam, eaque vel officiis beatae eius
+                voluptatibus minima, aut corporis architecto.
+              </p>
+            </div>
+            <div class="col mt-5" data-aos="fade-up">
+              <i class="fa-solid fa-user fa-2xl serviceIcons mt-5"></i>
+              <h3 class="mt-5">Business Meetings</h3>
+              <p class="texts mt-5">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Officia itaque laborum voluptates minus. Ratione eligendi quas
+                id animi corporis quos totam voluptatum repellendus eaque,
+                facere, fugit quasi voluptatem magni! Suscipit.
+              </p>
+            </div>
+            <div class="col mt-5" data-aos="fade-up">
+              <i
+                class="fa-solid fa-bell-concierge fa-2xl serviceIcons mt-5"
+              ></i>
+              <h3 class="mt-5">Wedding Party</h3>
+              <p class="texts mt-5">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Corporis facere ex debitis recusandae minus velit amet
+                asperiores laborum deserunt, ea voluptate accusantium eveniet
+                unde non placeat exercitationem similique. Eligendi, ipsum!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <!--Specialties-->
+      <section>
+        <div class="container text-center">
+          <div class="container sectionsHeading" data-aos="fade-up">
+            <span class="calligraphyText">𝓢𝓹𝓮𝓬𝓲𝓪𝓵𝓽𝓲𝓮𝓼</span>
+            <h2 class="sectionsText">Our Menu</h2>
+          </div>
+          <div class="row text-start" data-aos="fade-up">
+            <div class="col col-lg-3 col-md-6 col-12 border">
+              <img
+                src="images/chelo-kabab-koobideh-min.jpg"
+                class="specialtyImage"
+                alt=""
+              />
+            </div>
+            <div class="col col-lg-3 col-md-6 col-12 border">
+              <h3 class="foodName mt-4">Food Name</h3>
+              <span class="d-inline-block price mt-4">$100</span>
+              <p class="recipText mt-4">Meat, Potatoes, Rice, Tomatoe</p>
+              <button
+                type="button"
+                class="btn btn-outline-primary mt-4 orderBtn"
+              >
+                Order now
+              </button>
+            </div>
+            <div class="col col-lg-3 col-md-6 col-12 border">
+              <img
+                src="images/chelo-kabab-koobideh-min.jpg"
+                class="specialtyImage"
+                alt=""
+              />
+            </div>
+            <div class="col col-lg-3 col-md-6 col-12 border">
+              <h3 class="foodName mt-4">Food Name</h3>
+              <span class="d-inline-block price mt-4">$100</span>
+              <p class="recipText mt-4">Meat, Potatoes, Rice, Tomatoe</p>
+              <button
+                type="button"
+                class="btn btn-outline-primary mt-4 orderBtn"
+              >
+                Order now
+              </button>
+            </div>
+          </div>
+
+          <div class="row text-start" data-aos="fade-up">
+            <div
+              class="col col-lg-3 col-md-6 col-12 border d-lg-block d-md-block d-none"
+            >
+              <h3 class="foodName mt-4">Food Name</h3>
+              <span class="d-inline-block price mt-4">$100</span>
+              <p class="recipText mt-4">Meat, Potatoes, Rice, Tomatoe</p>
+              <button
+                type="button"
+                class="btn btn-outline-primary mt-4 orderBtn"
+              >
+                Order now
+              </button>
+            </div>
+            <div class="col col-lg-3 col-md-6 col-12 border">
+              <img
+                src="images/chelo-kabab-koobideh-min.jpg"
+                class="specialtyImage"
+                alt=""
+              />
+            </div>
+            <div class="col col-lg-3 col-md-6 col-12 border">
+              <h3 class="foodName mt-4">Food Name</h3>
+              <span class="d-inline-block price mt-4">$100</span>
+              <p class="recipText mt-4">Meat, Potatoes, Rice, Tomatoe</p>
+              <button
+                type="button"
+                class="btn btn-outline-primary mt-4 orderBtn"
+              >
+                Order now
+              </button>
+            </div>
+            <div
+              class="col col-lg-3 col-md-6 col-12 border d-lg-block d-md-block d-none"
+            >
+              <img
+                src="images/chelo-kabab-koobideh-min.jpg"
+                class="specialtyImage"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="row text-start" data-aos="fade-up">
+            <div class="col col-lg-3 col-md-6 col-12 border">
+              <p>5</p>
+              <img
+                src="images/chelo-kabab-koobideh-min.jpg"
+                class="specialtyImage"
+                alt=""
+              />
+            </div>
+            <div class="col col-lg-3 col-md-6 col-12 border">
+              <h3 class="foodName mt-4">Food Name</h3>
+              <span class="d-inline-block price mt-4">$100</span>
+              <p class="recipText mt-4">Meat, Potatoes, Rice, Tomatoe</p>
+              <button
+                type="button"
+                class="btn btn-outline-primary mt-4 orderBtn"
+              >
+                Order now
+              </button>
+            </div>
+            <div class="col col-lg-3 col-md-6 col-12 border">
+              <img
+                src="images/chelo-kabab-koobideh-min.jpg"
+                class="specialtyImage"
+                alt=""
+              />
+            </div>
+            <div class="col col-lg-3 col-md-6 col-12 border">
+              <h3 class="foodName mt-4">Food Name</h3>
+              <span class="d-inline-block price mt-4">$100</span>
+              <p class="recipText mt-4">Meat, Potatoes, Rice, Tomatoe</p>
+              <button
+                type="button"
+                class="btn btn-outline-primary mt-4 orderBtn"
+              >
+                Order now
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Team-->
+      <section>
+        <div class="container text-start mt-5">
+          <div class="container sectionsHeading mb-5" data-aos="fade-up">
+            <span class="calligraphyText">𝓒𝓱𝓮𝓯</span>
+            <h2 class="sectionsText">Our Master Chef</h2>
+          </div>
+          <div class="row row-cols-lg-4 row-cols-md-2 row-cols-1 g-5 mt-5">
+            <div class="col" data-aos="fade-up">
+              <div class="card border-0" style="width: 20rem">
+                <img
+                  src="images/pexels-miquel-ferran-gomez-figueroa-3814446.jpg"
+                  class="card-img-top rounded-4"
+                  alt="staff image" data-aos="fade-up"
+                />
+                <div class="card-body" data-aos="fade-up">
+                  <h5 class="card-title">Staff Name</h5>
+                  <p class="card-text">Job title</p>
+                  <a href=""
+                    ><i class="fa-brands fa-twitter fa-lg themeColor"></i
+                  ></a>
+                  <a href=""
+                    ><i
+                      class="fa-brands fa-facebook-f fa-lg ps-3 themeColor"
+                    ></i
+                  ></a>
+                  <a href=""
+                    ><i class="fa-brands fa-instagram fa-lg ps-3 themeColor"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col" data-aos="fade-up">
+              <div class="card border-0" style="width: 20rem">
+                <img
+                  src="images/pexels-miquel-ferran-gomez-figueroa-3814446.jpg"
+                  class="card-img-top rounded-4"
+                  alt="staff image" data-aos="fade-up"
+                />
+                <div class="card-body" data-aos="fade-up">
+                  <h5 class="card-title">Staff Name</h5>
+                  <p class="card-text">Job title</p>
+                  <a href=""
+                    ><i class="fa-brands fa-twitter fa-lg themeColor"></i
+                  ></a>
+                  <a href=""
+                    ><i
+                      class="fa-brands fa-facebook-f fa-lg ps-3 themeColor"
+                    ></i
+                  ></a>
+                  <a href=""
+                    ><i class="fa-brands fa-instagram fa-lg ps-3 themeColor"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col" data-aos="fade-up">
+              <div class="card border-0" style="width: 20rem">
+                <img
+                  src="images/pexels-miquel-ferran-gomez-figueroa-3814446.jpg"
+                  class="card-img-top rounded-4"
+                  alt="staff image" data-aos="fade-up"
+                />
+                <div class="card-body" data-aos="fade-up">
+                  <h5 class="card-title">Staff Name</h5>
+                  <p class="card-text">Job title</p>
+                  <a href=""
+                    ><i class="fa-brands fa-twitter fa-lg themeColor"></i
+                  ></a>
+                  <a href=""
+                    ><i
+                      class="fa-brands fa-facebook-f fa-lg ps-3 themeColor"
+                    ></i
+                  ></a>
+                  <a href=""
+                    ><i class="fa-brands fa-instagram fa-lg ps-3 themeColor"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col" data-aos="fade-up">
+              <div class="card border-0" style="width: 20rem">
+                <img
+                  src="images/pexels-miquel-ferran-gomez-figueroa-3814446.jpg"
+                  class="card-img-top rounded-4"
+                  alt="staff image" data-aos="fade-up"
+                />
+                <div class="card-body" data-aos="fade-up">
+                  <h5 class="card-title">Staff Name</h5>
+                  <p class="card-text">Job title</p>
+                  <a href=""
+                    ><i class="fa-brands fa-twitter fa-lg themeColor"></i
+                  ></a>
+                  <a href=""
+                    ><i
+                      class="fa-brands fa-facebook-f fa-lg ps-3 themeColor"
+                    ></i
+                  ></a>
+                  <a href=""
+                    ><i class="fa-brands fa-instagram fa-lg ps-3 themeColor"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Book a Table-->
+      <section>
+        <div class="container-fluid bgImage mt-5">
+          <div class="container bg-light-subtle firstForm">
+            <div class="container sectionsHeading" data-aos="fade-up">
+              <span class="calligraphyText">𝓑𝓸𝓸𝓴𝓲𝓷𝓰</span>
+              <h2 class="sectionsText">Make Reservation</h2>
+            </div>
+            <form
+              class="row row-cols-lg-2 row-cols-md-2 row-cols-1 g-5 overflow-scroll"
+            >
+              <div class="col col-lg-6 col-md-6 col-12">
+                <label for="inputName" class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-control form-control-lg"
+                  placeholder="First name"
+                  aria-label="First name"
+                  id="inputName"
+                />
+              </div>
+              <div class="col col-lg-6 col-md-6 col-12">
+                <label for="inputEmail" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control form-control-lg"
+                  id="inputEmail"
+                  required
+                />
+              </div>
+              <div class="col col-lg-6 col-md-6 col-12">
+                <label for="inputPhone" class="form-label">Phone number</label>
+                <input
+                  type="number"
+                  class="form-control form-control-lg"
+                  id="inputPhone"
+                  required
+                />
+              </div>
+              <div class="col col-lg-6 col-md-6 col-12">
+                <label for="inputDate" class="form-label">Date</label>
+                <input
+                  type="date"
+                  class="form-control form-control-lg"
+                  id="inputDate"
+                  required
+                />
+              </div>
+              <div class="col col-lg-6 col-md-6 col-12">
+                <label for="inputTime" class="form-label">Time</label>
+                <input
+                  type="time"
+                  class="form-control form-control-lg"
+                  id="inputTime"
+                  required
+                />
+              </div>
+              <div class="col col-lg-6 col-md-6 col-12">
+                <label for="inputState" class="form-label">Person</label>
+                <select id="inputState" class="form-select form-control-lg">
+                  <option selected>Person</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5+</option>
+                </select>
+              </div>
+              <div class="col-12 mx-auto text-center gy-5">
+                <button type="submit" class="btn btn-primary">
+                  Book a Table
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!--Testimony-->
+      <section class="bg-body-tertiary fullHeight">
+        <div class="container-fluid mt-5">
+          <div class="container sectionsHeading mt-5" data-aos="fade-up">
+            <span class="calligraphyText">𝓣𝓮𝓼𝓽𝓲𝓶𝓸𝓷𝔂</span>
+            <h2 class="sectionsText">Happy Customer</h2>
+          </div>
+          <!--Testimony Carousel-->
+          <section class="testimonial text-center">
+            <div class="container" data-aos="fade-up">
+              <div class="heading white-heading" data-aos="fade-up">𝓟𝓻𝓸𝓸𝓯 𝓸𝓯 𝓺𝓾𝓪𝓵𝓲𝓽𝔂</div>
+              <div
+                id="testimonial4"
+                class="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x"
+                data-bs-ride="carousel"
+                data-bs-pause="hover"
+                data-bs-interval="5000"
+                data-bs-duration="2000"
+              >
+                <div class="carousel-inner" role="listbox">
+                  <div class="carousel-item active">
+                    <div class="testimonial4_slide">
+                      <img
+                        src="images/business-person.png"
+                        class="img-circle img-responsive"
+                      />
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book.
+                      </p>
+                      <h4>Client 1</h4>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="testimonial4_slide">
+                      <img
+                        src="images/business-person.png"
+                        class="img-circle img-responsive"
+                      />
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book.
+                      </p>
+                      <h4>Client 2</h4>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="testimonial4_slide">
+                      <img
+                        src="images/business-person.png"
+                        class="img-circle img-responsive"
+                      />
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book.
+                      </p>
+                      <h4>Client 3</h4>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  class="carousel-control-prev"
+                  href="#testimonial4"
+                  data-bs-slide="prev"
+                >
+                  <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a
+                  class="carousel-control-next"
+                  href="#testimonial4"
+                  data-bs-slide="next"
+                >
+                  <span class="carousel-control-next-icon"></span>
+                </a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <!--Blog-->
+      <section class="mt-5">
+        <div class="container sectionsHeading" data-aos="fade-up">
+          <span class="calligraphyText">𝓑𝓵𝓸𝓰</span>
+          <h2 class="sectionsText">Recent Posts</h2>
+        </div>
+        <div class="container mt-5">
+          <div class="row row-cols-lg-3 row-cols-md-3 row-cols-1 gy-5">
+            <div class="col" data-aos="fade-up">
+              <div class="card border-0" style="width: 25rem">
+                <img
+                  src="images/victorias-newest-luxury-dining-restaurant-opens-the-english-grill-1.jpg"
+                  class="card-img-top"
+                  alt="..." data-aos="fade-up"
+                />
+                <div class="card-body" data-aos="fade-up">
+                  <p class="card-text blogText">Sept. 06, 2023 Admin</p>
+                  <h5 class="card-title blogTitle">Taste the delicious foods in Asia</h5>
+                  <a href="#" class="btn btn-close-white">Read more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col" data-aos="fade-up">
+              <div class="card border-0" style="width: 25rem">
+                <img
+                  src="images/victorias-newest-luxury-dining-restaurant-opens-the-english-grill-1.jpg"
+                  class="card-img-top"
+                  alt="..." data-aos="fade-up"
+                />
+                <div class="card-body" data-aos="fade-up">
+                  <p class="card-text blogText">Sept. 06, 2023 Admin</p>
+                  <h5 class="card-title blogTitle blogTitle">Taste the delicious foods in Asia</h5>
+                  <a href="#" class="btn btn-close-white">Read more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col" data-aos="fade-up">
+              <div class="card border-0" style="width: 25rem">
+                <img
+                  src="images/victorias-newest-luxury-dining-restaurant-opens-the-english-grill-1.jpg"
+                  class="card-img-top"
+                  alt="..." data-aos="fade-up"
+                />
+                <div class="card-body" data-aos="fade-up">
+                  <p class="card-text blogText">Sept. 06, 2023 Admin</p>
+                  <h5 class="card-title blogTitle">Taste the delicious foods in Asia</h5>
+                  <a href="#" class="btn btn-close-white">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Footer-->
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <h3>RestaurantName</h3>
+              <ul class="list-unstyled three-column">
+                <li>Home</li>
+                <li>Services</li>
+                <li>About</li>
+                <li>Contact</li>
+              </ul>
+              <ul class="list-unstyled socila-list">
+                <li data-aos="fade-up">
+                  <img
+                    src="images/png-transparent-twitter-logo-social-media-iphone-organization-logo-twitter-computer-network-leaf-media.png"
+                    class="footerLogos"
+                    alt=""
+                  />
+                </li data-aos="fade-up">
+                <li data-aos="fade-up">
+                  <img
+                    src="images/Facebook_Logo_(2019).png"
+                    class="footerLogos"
+                    alt=""
+                  />
+                </li>
+                <li data-aos="fade-up">
+                  <img
+                    src="images/Instagram_icon.png.webp"
+                    class="footerLogos"
+                    alt=""
+                  />
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <h3>latest Articles</h3>
+              <div class="media">
+                <a href="#" class="pull-left">
+                  <img
+                    src="http://placehold.it/64x64"
+                    alt=""
+                    class="media-object"
+                  />
+                </a>
+                <div class="media-body">
+                  <h4 class="media-heading">Programming</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+
+              <div class="media">
+                <a href="#" class="pull-left">
+                  <img
+                    src="http://placehold.it/64x64"
+                    alt=""
+                    class="media-object"
+                  />
+                </a>
+                <div class="media-body">
+                  <h4 class="media-heading">Coding</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+
+              <div class="media">
+                <a href="#" class="pull-left">
+                  <img
+                    src="http://placehold.it/64x64"
+                    alt=""
+                    class="media-object"
+                  />
+                </a>
+                <div class="media-body">
+                  <h4 class="media-heading">Web Sesign</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <h3>Instagram</h3>
+              <img class="img-thumbnail" src="images/Footer1.jpg" alt="" />
+              <img class="img-thumbnail" src="images/footre2.webp" alt="" />
+              <img class="img-thumbnail" src="images/footer3.jpg" alt="" />
+              <img class="img-thumbnail" src="images/footer4.jpg" alt="" />
+            </div>
+
+            <div class="col">
+              <h3>Newsletter</h3>
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Enter eamil address"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="copyright text-center">
+          Copyright &copy; 2023 <span>Your Restaurant Name</span>
+        </div>
+      </footer>
+    </div>
+
+    <!--AOS script for animate on scroll-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000
+      });
+    </script>
+  </body>
+</html>
